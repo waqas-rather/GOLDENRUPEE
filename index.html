@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golden Rupee Fintech Pvt Ltd – Connecting India to Instant Credit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#home">
+      <div class="logo-icon">₹</div>
+      <div class="logo-text">Golden Rupee Fintech <span>Pvt Ltd</span></div>
+    </a>
+    <button class="nav-cta" onclick="openApplyModal()">Apply for a Loan</button>
+  </div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🇮🇳 Trusted Across India</div>
+    <h1>Connecting India to <em>Instant Credit.</em></h1>
+    <p class="hero-sub">Golden Rupee Fintech bridges borrowers and lenders with a seamless platform for personal, business, home, and more loans — approved fast, disbursed faster.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="openApplyModal()">Apply for a Loan</button>
+      <button class="btn-outline" onclick="openPartnerModal()">Join as DSA Partner</button>
+    </div>
+    <div class="hero-stats">
+      <div><div class="hstat-num">50+</div><div class="hstat-label">Lending Partners</div></div>
+      <div><div class="hstat-num">28+</div><div class="hstat-label">States Covered</div></div>
+      <div><div class="hstat-num">10K+</div><div class="hstat-label">Loans Processed</div></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card-stack">
+      <div class="hcard hcard1">
+        <div class="hcard-icon">💰</div>
+        <div class="hcard-label">Instant Approval</div>
+        <div class="hcard-value">₹50 Lakh</div>
+        <div class="hcard-sub">Personal Loan · 10.5% p.a.</div>
+      </div>
+      <div class="hcard hcard2">
+        <div class="hcard-icon">📈</div>
+        <div class="hcard-label">Business Loan</div>
+        <div class="hcard-value">₹2 Crore</div>
+        <div class="hcard-sub">Unsecured · Up to 5 Years</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section id="about">
+  <span class="section-tag">Why Choose Us</span>
+  <div class="why-grid">
+    <div class="why-text">
+      <h2 class="section-title">Why You Should <em>Partner With Us?</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub">Golden Rupee Fintech's range of financial products has continuously innovated to cater to your personal and business needs.</p>
+      <ul class="product-list">
+        <li>Instant Loans, Personal Loans, Business Loans</li>
+        <li>EMI Cards, Credit Cards, Education Loans</li>
+        <li>Home Loan, Mortgage Loan, Gold Loan</li>
+        <li>Commercial Vehicle Loans, Working Capital Loans</li>
+        <li>Medical Equipment Loans, Solar Equipment Loans</li>
+      </ul>
+    </div>
+    <div class="why-features">
+      <div class="why-card"><div class="wc-icon">⚡</div><div class="wc-title">Easy Onboarding</div><div class="wc-text">Start your journey digitally in minutes.</div></div>
+      <div class="why-card"><div class="wc-icon">📦</div><div class="wc-title">Multiple Products</div><div class="wc-text">Full suite of financial products under one roof.</div></div>
+      <div class="why-card"><div class="wc-icon">✅</div><div class="wc-title">Instant Approvals</div><div class="wc-text">Smart tech for fast in-principle decisions.</div></div>
+      <div class="why-card"><div class="wc-icon">🔒</div><div class="wc-title">Secure Data</div><div class="wc-text">Bank-grade encryption keeps your data safe.</div></div>
+      <div class="why-card"><div class="wc-icon">₹</div><div class="wc-title">Zero Investment</div><div class="wc-text">Start your DSA journey at absolutely zero cost.</div></div>
+      <div class="why-card"><div class="wc-icon">⏱️</div><div class="wc-title">Prompt Payouts</div><div class="wc-text">Transparent and timely commission disbursals.</div></div>
+      <div class="why-card"><div class="wc-icon">🤝</div><div class="wc-title">Expert Support</div><div class="wc-text">Dedicated RMs for every partner in our network.</div></div>
+      <div class="why-card"><div class="wc-icon">🗺️</div><div class="wc-title">Pan India</div><div class="wc-text">Operations spanning all 28 states across India.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ LOAN PRODUCTS ═══════════ -->
+<section id="loans">
+  <span class="section-tag">Our Products</span>
+  <h2 class="section-title">Best Loan Offers at <em>Your Fingertips!</em></h2>
+  <div class="divider"></div>
+  <div class="tabs-nav">
+    <button class="tab-btn active" onclick="switchTab('instant',this)">Instant Loans</button>
+    <button class="tab-btn" onclick="switchTab('personal',this)">Personal Loan</button>
+    <button class="tab-btn" onclick="switchTab('business',this)">Business Loans</button>
+    <button class="tab-btn" onclick="switchTab('home',this)">Home Loan</button>
+    <button class="tab-btn" onclick="switchTab('gold',this)">Gold Loan</button>
+    <button class="tab-btn" onclick="switchTab('auto',this)">Auto Loan</button>
+    <button class="tab-btn" onclick="switchTab('edu',this)">Education Loan</button>
+    <button class="tab-btn" onclick="switchTab('emi',this)">EMI Cards</button>
+    <button class="tab-btn" onclick="switchTab('credit',this)">Credit Cards</button>
+  </div>
+
+  <!-- INSTANT LOANS -->
+  <div id="tab-instant" class="tab-content active"><div class="loan-cards">
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏦</div><div><div class="lc-name">HDFC Bank</div><div class="lc-type">Instant Personal Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">10.50% – 21%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹50,000 – ₹40 Lakh</div><div class="lc-stat-sub">Based on eligibility</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 60 Months</div><div class="lc-stat-sub">Flexible repayment</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 2.5%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Instant Disbursal in 4 hrs</span><span class="lc-badge blue">Minimal Documentation</span><span class="lc-badge gold">Salary ₹25,000+ / month</span><span class="lc-badge">Age 21–60 Years</span><span class="lc-badge">No Collateral Required</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏛️</div><div><div class="lc-name">ICICI Bank</div><div class="lc-type">Insta Loan (Pre-approved)</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">10.75% – 19%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹1 Lakh – ₹50 Lakh</div><div class="lc-stat-sub">Pre-approved offers</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 72 Months</div><div class="lc-stat-sub">Up to 6 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">₹999 – 2%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Same Day Disbursal</span><span class="lc-badge blue">100% Digital Process</span><span class="lc-badge gold">Salary ₹30,000+ / month</span><span class="lc-badge">CIBIL Score 700+</span><span class="lc-badge">Part-prepayment Allowed</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🌟</div><div><div class="lc-name">Bajaj Finserv</div><div class="lc-type">Flexi Personal Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">11% – 26%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹20,000 – ₹35 Lakh</div><div class="lc-stat-sub">Flexi loan facility</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 84 Months</div><div class="lc-stat-sub">Up to 7 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 3.93%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Disbursal in 24 hrs</span><span class="lc-badge blue">Withdraw &amp; Repay Anytime</span><span class="lc-badge gold">Salary ₹25,000+ / month</span><span class="lc-badge">Age 23–55 Years</span><span class="lc-badge">Pay Interest Only on Used Amount</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">💎</div><div><div class="lc-name">Axis Bank</div><div class="lc-type">Instant Personal Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">10.49% – 22%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹50,000 – ₹40 Lakh</div><div class="lc-stat-sub">Based on eligibility</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 60 Months</div><div class="lc-stat-sub">Up to 5 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 2%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Approval in 30 Minutes</span><span class="lc-badge blue">No Guarantor Needed</span><span class="lc-badge gold">Salary ₹15,000+ / month</span><span class="lc-badge">CIBIL Score 650+</span><span class="lc-badge">Zero Foreclosure Charges</span></div>
+    </div>
+  </div></div>
+
+  <!-- PERSONAL LOAN -->
+  <div id="tab-personal" class="tab-content"><div class="loan-cards">
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏛️</div><div><div class="lc-name">State Bank of India</div><div class="lc-type">SBI Personal Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">9.60% – 15.65%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹25,000 – ₹20 Lakh</div><div class="lc-stat-sub">For salaried &amp; pensioners</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">6 – 72 Months</div><div class="lc-stat-sub">Up to 6 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">1% + GST</div><div class="lc-stat-sub">Min ₹1,000</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Lowest Rate in Market</span><span class="lc-badge blue">Government Employees Preferred</span><span class="lc-badge gold">Salary ₹15,000+ / month</span><span class="lc-badge">Age 21–58 Years</span><span class="lc-badge">No Prepayment Penalty</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏦</div><div><div class="lc-name">HDFC Bank</div><div class="lc-type">Personal Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">10.50% – 21.00%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹50,000 – ₹40 Lakh</div><div class="lc-stat-sub">Based on income &amp; profile</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 60 Months</div><div class="lc-stat-sub">Up to 5 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 2.5%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Disbursal in 4 Hours</span><span class="lc-badge blue">No Collateral</span><span class="lc-badge gold">Salary ₹25,000+ / month</span><span class="lc-badge">CIBIL 700+</span><span class="lc-badge">Pre-approved for HDFC Customers</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🌟</div><div><div class="lc-name">Tata Capital</div><div class="lc-type">Personal Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">10.99% – 26.00%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹75,000 – ₹35 Lakh</div><div class="lc-stat-sub">Salaried &amp; self-employed</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 72 Months</div><div class="lc-stat-sub">Up to 6 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 2.75%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Online Approval in 2 hrs</span><span class="lc-badge blue">Doorstep Service</span><span class="lc-badge gold">Salary ₹20,000+ / month</span><span class="lc-badge">Age 22–58 Years</span><span class="lc-badge">Self-employed Also Eligible</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">💼</div><div><div class="lc-name">IndusInd Bank</div><div class="lc-type">Personal Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">10.49% – 22.00%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹30,000 – ₹50 Lakh</div><div class="lc-stat-sub">Up to 50 Lakh</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 60 Months</div><div class="lc-stat-sub">Up to 5 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 3%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Quick Disbursal</span><span class="lc-badge blue">Top-Up Facility Available</span><span class="lc-badge gold">Salary ₹25,000+ / month</span><span class="lc-badge">CIBIL 700+</span><span class="lc-badge">No Hidden Charges</span></div>
+    </div>
+  </div></div>
+
+  <!-- BUSINESS LOAN -->
+  <div id="tab-business" class="tab-content"><div class="loan-cards">
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏢</div><div><div class="lc-name">HDFC Bank</div><div class="lc-type">Business Loan (Unsecured)</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">10.75% – 22.50%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹50,000 – ₹50 Lakh</div><div class="lc-stat-sub">No collateral required</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 48 Months</div><div class="lc-stat-sub">Up to 4 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 2.5%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Disbursal in 48 hrs</span><span class="lc-badge blue">Minimal Documentation</span><span class="lc-badge gold">Business Vintage 3+ Years</span><span class="lc-badge">Annual Turnover ₹40L+</span><span class="lc-badge">GST Registered</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">📈</div><div><div class="lc-name">ICICI Bank</div><div class="lc-type">Business Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">11.25% – 18.00%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹1 Lakh – ₹2 Crore</div><div class="lc-stat-sub">Secured &amp; Unsecured</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 60 Months</div><div class="lc-stat-sub">Up to 5 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 2%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Online Approval</span><span class="lc-badge blue">Overdraft Facility Available</span><span class="lc-badge gold">Business Vintage 2+ Years</span><span class="lc-badge">Turnover ₹25L+</span><span class="lc-badge">CIBIL 700+</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🌐</div><div><div class="lc-name">Kotak Mahindra</div><div class="lc-type">Business Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">16% – 26.00%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹3 Lakh – ₹75 Lakh</div><div class="lc-stat-sub">Unsecured</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 48 Months</div><div class="lc-stat-sub">Up to 4 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 2%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Fast Processing</span><span class="lc-badge blue">Doorstep Documentation</span><span class="lc-badge gold">Business Vintage 3+ Years</span><span class="lc-badge">Turnover ₹40L+</span><span class="lc-badge">ITR Required</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏗️</div><div><div class="lc-name">Bajaj Finserv</div><div class="lc-type">Business Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">14% – 30.00%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹2 Lakh – ₹80 Lakh</div><div class="lc-stat-sub">Unsecured Flexi Loan</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 96 Months</div><div class="lc-stat-sub">Up to 8 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 3.54%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Approval in 48 hrs</span><span class="lc-badge blue">Flexi Withdraw &amp; Repay</span><span class="lc-badge gold">Business Vintage 3+ Years</span><span class="lc-badge">Turnover ₹20L+</span><span class="lc-badge">No Collateral</span></div>
+    </div>
+  </div></div>
+
+  <!-- HOME LOAN -->
+  <div id="tab-home" class="tab-content"><div class="loan-cards">
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏠</div><div><div class="lc-name">State Bank of India</div><div class="lc-type">SBI Home Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">8.50% onwards</div><div class="lc-stat-sub">p.a. (Floating)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹5 Lakh – ₹5 Crore</div><div class="lc-stat-sub">Based on income</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">Up to 30 Years</div><div class="lc-stat-sub">Maximum tenure</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">0.35% + GST</div><div class="lc-stat-sub">Min ₹2,000</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Lowest Rate Available</span><span class="lc-badge blue">Balance Transfer Facility</span><span class="lc-badge gold">Salary ₹25,000+ / month</span><span class="lc-badge">Age 18–70 Years</span><span class="lc-badge">Tax Benefit u/s 24 &amp; 80C</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏡</div><div><div class="lc-name">LIC Housing Finance</div><div class="lc-type">Home Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">8.65% onwards</div><div class="lc-stat-sub">p.a. (Floating)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹1 Lakh – ₹3 Crore</div><div class="lc-stat-sub">Based on eligibility</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">Up to 25 Years</div><div class="lc-stat-sub">Maximum tenure</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 0.5% + GST</div><div class="lc-stat-sub">Subject to waiver</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Doorstep Service</span><span class="lc-badge blue">NRI Loans Available</span><span class="lc-badge gold">Salaried &amp; Self-employed</span><span class="lc-badge">Plot + Construction Covered</span><span class="lc-badge">Prepayment Anytime</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏦</div><div><div class="lc-name">HDFC Bank</div><div class="lc-type">Home Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">8.75% onwards</div><div class="lc-stat-sub">p.a. (Floating)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">Up to ₹10 Crore</div><div class="lc-stat-sub">Based on profile</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">Up to 30 Years</div><div class="lc-stat-sub">Maximum tenure</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 0.5% + GST</div><div class="lc-stat-sub">Min ₹3,000</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Digital Approval Process</span><span class="lc-badge blue">Top-up Loan Available</span><span class="lc-badge gold">Age 21–65 Years</span><span class="lc-badge">Under-construction Properties OK</span><span class="lc-badge">Free Legal &amp; Technical Check</span></div>
+    </div>
+  </div></div>
+
+  <!-- GOLD LOAN -->
+  <div id="tab-gold" class="tab-content"><div class="loan-cards">
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🥇</div><div><div class="lc-name">Muthoot Finance</div><div class="lc-type">Gold Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">7.00% – 27%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹1,500 – ₹1 Crore</div><div class="lc-stat-sub">Up to 75% of gold value</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">3 – 24 Months</div><div class="lc-stat-sub">Flexible repayment</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Minimal</div><div class="lc-stat-sub">Varies by scheme</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Disbursal in 5 Minutes</span><span class="lc-badge blue">4,500+ Branches PAN India</span><span class="lc-badge gold">18–22 Carat Gold Accepted</span><span class="lc-badge">No Income Proof Needed</span><span class="lc-badge">Safe Gold Storage</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">✨</div><div><div class="lc-name">Manappuram Finance</div><div class="lc-type">Gold Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">6.99% – 29%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹1,000 – ₹1 Crore</div><div class="lc-stat-sub">Up to 75% of gold value</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">Up to 12 Months</div><div class="lc-stat-sub">Short-term loan</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Nil</div><div class="lc-stat-sub">Zero processing fee</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Online Gold Loan Available</span><span class="lc-badge blue">3,500+ Branches</span><span class="lc-badge gold">Bullet Repayment Option</span><span class="lc-badge">No CIBIL Check</span><span class="lc-badge">Partial Release Facility</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏛️</div><div><div class="lc-name">SBI Gold Loan</div><div class="lc-type">Gold Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">7.50% onwards</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹20,000 – ₹50 Lakh</div><div class="lc-stat-sub">Per account</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">Up to 36 Months</div><div class="lc-stat-sub">Up to 3 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">0.50% + GST</div><div class="lc-stat-sub">Min ₹500</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Lowest Rate</span><span class="lc-badge blue">22,000+ Branches</span><span class="lc-badge gold">Govt Bank Trust</span><span class="lc-badge">Overdraft Option</span><span class="lc-badge">Minimum Documentation</span></div>
+    </div>
+  </div></div>
+
+  <!-- AUTO LOAN -->
+  <div id="tab-auto" class="tab-content"><div class="loan-cards">
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🚗</div><div><div class="lc-name">HDFC Bank</div><div class="lc-type">Car Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">8.70% – 13.55%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">Up to 100% On-Road</div><div class="lc-stat-sub">New &amp; used cars</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">12 – 84 Months</div><div class="lc-stat-sub">Up to 7 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to ₹5,000</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Approval in 30 Mins</span><span class="lc-badge blue">1000+ Car Brands Covered</span><span class="lc-badge gold">Salary ₹20,000+ / month</span><span class="lc-badge">New &amp; Used Cars</span><span class="lc-badge">Zero Foreclosure After 12 Mo</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🏎️</div><div><div class="lc-name">SBI Car Loan</div><div class="lc-type">Auto Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">8.65% – 11.15%</div><div class="lc-stat-sub">p.a. (Reducing)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">Up to ₹1 Crore</div><div class="lc-stat-sub">Based on income</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">Up to 84 Months</div><div class="lc-stat-sub">Up to 7 years</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Nil</div><div class="lc-stat-sub">Zero processing fee</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Lowest Rate</span><span class="lc-badge blue">No Processing Fee</span><span class="lc-badge gold">Govt Bank Security</span><span class="lc-badge">New Cars Only</span><span class="lc-badge">NRI Eligible</span></div>
+    </div>
+  </div></div>
+
+  <!-- EDUCATION LOAN -->
+  <div id="tab-edu" class="tab-content"><div class="loan-cards">
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🎓</div><div><div class="lc-name">SBI Student Loan</div><div class="lc-type">Education Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">8.15% – 11.15%</div><div class="lc-stat-sub">p.a. (Floating)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">Up to ₹1.5 Crore</div><div class="lc-stat-sub">India &amp; Abroad</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Repayment</div><div class="lc-stat-val">Up to 15 Years</div><div class="lc-stat-sub">After course completion</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 1%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">100% Tuition Funding</span><span class="lc-badge blue">No Collateral up to ₹40L</span><span class="lc-badge gold">USA, UK, Canada Covered</span><span class="lc-badge">Tax Benefit u/s 80E</span><span class="lc-badge">Doorstep Service</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🌍</div><div><div class="lc-name">Avanse Financial</div><div class="lc-type">Study Abroad Loan</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">10.50% – 14.00%</div><div class="lc-stat-sub">p.a. (Floating)</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Loan Amount</div><div class="lc-stat-val">₹1 Lakh – ₹1 Crore</div><div class="lc-stat-sub">Living + tuition covered</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Repayment</div><div class="lc-stat-val">Up to 12 Years</div><div class="lc-stat-sub">After course completion</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Processing Fee</div><div class="lc-stat-val">Up to 2%</div><div class="lc-stat-sub">+ GST applicable</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Living Expenses Covered</span><span class="lc-badge blue">Fast Visa Letter</span><span class="lc-badge gold">4,500+ Institutions</span><span class="lc-badge">IELTS Not Required</span><span class="lc-badge">Tax Benefit u/s 80E</span></div>
+    </div>
+  </div></div>
+
+  <!-- EMI CARDS -->
+  <div id="tab-emi" class="tab-content"><div class="loan-cards">
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">💳</div><div><div class="lc-name">Bajaj Finserv</div><div class="lc-type">EMI Card (Insta EMI)</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">0% – 30%</div><div class="lc-stat-sub">No Cost EMI available</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Credit Limit</div><div class="lc-stat-val">Up to ₹4 Lakh</div><div class="lc-stat-sub">Pre-approved limit</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">3 – 24 Months</div><div class="lc-stat-sub">Flexible EMI options</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Annual Fee</div><div class="lc-stat-val">₹117 – ₹588</div><div class="lc-stat-sub">Varies by plan</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">1.2 Lakh+ Partner Stores</span><span class="lc-badge blue">Instant Activation</span><span class="lc-badge gold">Age 21–60 Years</span><span class="lc-badge">Salary ₹20,000+ / month</span><span class="lc-badge">No Credit Card Needed</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🛒</div><div><div class="lc-name">Home Credit</div><div class="lc-type">EMI Card</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Interest Rate</div><div class="lc-stat-val highlight">0% – 36%</div><div class="lc-stat-sub">No Cost EMI available</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Credit Limit</div><div class="lc-stat-val">Up to ₹2 Lakh</div><div class="lc-stat-sub">Instant approval</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Tenure</div><div class="lc-stat-val">6 – 18 Months</div><div class="lc-stat-sub">Flexible repayment</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Annual Fee</div><div class="lc-stat-val">₹0</div><div class="lc-stat-sub">Lifetime free card</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="document.getElementById('Calculator').scrollIntoView({behavior:'smooth'})">Check EMI</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">Lifetime Free Card</span><span class="lc-badge blue">Low Income Eligible</span><span class="lc-badge gold">Income ₹8,000+ / month</span><span class="lc-badge">New to Credit OK</span><span class="lc-badge">Electronics &amp; Appliances</span></div>
+    </div>
+  </div></div>
+
+  <!-- CREDIT CARDS -->
+  <div id="tab-credit" class="tab-content"><div class="loan-cards">
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🃏</div><div><div class="lc-name">HDFC Regalia</div><div class="lc-type">Premium Credit Card</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Annual Fee</div><div class="lc-stat-val highlight">₹2,500 + GST</div><div class="lc-stat-sub">Waived on ₹3L spend</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Credit Limit</div><div class="lc-stat-val">₹1 Lakh – ₹10 Lakh</div><div class="lc-stat-sub">Based on income</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Rewards Rate</div><div class="lc-stat-val">4 Points / ₹150</div><div class="lc-stat-sub">On all purchases</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Finance Charge</div><div class="lc-stat-val">3.6% / month</div><div class="lc-stat-sub">43.2% p.a.</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="openApplyModal()">Check Eligibility</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">12 Airport Lounge Visits / Yr</span><span class="lc-badge blue">5X Rewards on Travel</span><span class="lc-badge gold">Salary ₹1 Lakh+ / month</span><span class="lc-badge">CIBIL 750+</span><span class="lc-badge">Milestone Benefits ₹5,000</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">💫</div><div><div class="lc-name">SBI SimplyCLICK</div><div class="lc-type">Online Shopping Card</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Annual Fee</div><div class="lc-stat-val highlight">₹499 + GST</div><div class="lc-stat-sub">Waived on ₹1L spend</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Credit Limit</div><div class="lc-stat-val">₹50,000 – ₹5 Lakh</div><div class="lc-stat-sub">Based on income</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Rewards Rate</div><div class="lc-stat-val">10X on Online Spends</div><div class="lc-stat-sub">Amazon, Flipkart, etc.</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Finance Charge</div><div class="lc-stat-val">3.5% / month</div><div class="lc-stat-sub">42% p.a.</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="openApplyModal()">Check Eligibility</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">10X Rewards Online</span><span class="lc-badge blue">₹500 Amazon Gift Card</span><span class="lc-badge gold">Salary ₹20,000+ / month</span><span class="lc-badge">CIBIL 700+</span><span class="lc-badge">Fuel Surcharge Waiver</span></div>
+    </div>
+    <div class="loan-card">
+      <div class="lc-top">
+        <div class="lc-brand"><div class="lc-logo">🌈</div><div><div class="lc-name">Axis ACE Credit Card</div><div class="lc-type">Cashback Card</div></div></div>
+        <div class="lc-divider"></div>
+        <div class="lc-stats">
+          <div class="lc-stat"><div class="lc-stat-label">Annual Fee</div><div class="lc-stat-val highlight">₹499 + GST</div><div class="lc-stat-sub">Waived on ₹2L spend</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Credit Limit</div><div class="lc-stat-val">₹50,000 – ₹8 Lakh</div><div class="lc-stat-sub">Based on eligibility</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Cashback Rate</div><div class="lc-stat-val">5% on Bill Pay</div><div class="lc-stat-sub">2% on all other spends</div></div>
+          <div class="lc-stat"><div class="lc-stat-label">Finance Charge</div><div class="lc-stat-val">3.6% / month</div><div class="lc-stat-sub">43.2% p.a.</div></div>
+        </div>
+        <div class="lc-actions"><button class="lc-apply" onclick="openApplyModal()">Apply Now</button><button class="lc-emi-btn" onclick="openApplyModal()">Check Eligibility</button></div>
+      </div>
+      <div class="lc-bottom"><span class="lc-badge green">5% Cashback on Google Pay</span><span class="lc-badge blue">4% Cashback on Swiggy/Zomato</span><span class="lc-badge gold">Salary ₹15,000+ / month</span><span class="lc-badge">CIBIL 700+</span><span class="lc-badge">No Cap on Cashback</span></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ═══════════ EMI CALCULATOR ═══════════ -->
+<section id="Calculator">
+  <span class="section-tag">EMI Calculator</span>
+  <h2 class="section-title">How Much Do You <em>Need?</em></h2>
+  <div class="divider"></div>
+  <p class="section-sub">Calculate your monthly EMI instantly. Adjust the sliders to see your estimated payment.</p>
+  <div class="calc-wrap">
+    <div class="calc-sliders">
+      <div class="slider-group">
+        <div class="slider-label">
+          <span class="label-text">Loan Amount</span>
+          <span class="label-val" id="lbl-amount">₹10,00,000</span>
+        </div>
+        <input type="range" id="r-amount" min="100000" max="10000000" step="50000" value="1000000">
+        <div class="slider-minmax"><span>₹1 Lakh</span><span>₹1 Crore</span></div>
+      </div>
+      <div class="slider-group">
+        <div class="slider-label">
+          <span class="label-text">Loan Tenure</span>
+          <span class="label-val" id="lbl-tenure">36 Months</span>
+        </div>
+        <input type="range" id="r-tenure" min="6" max="360" step="6" value="36">
+        <div class="slider-minmax"><span>6 Months</span><span>30 Years</span></div>
+      </div>
+      <div class="slider-group">
+        <div class="slider-label">
+          <span class="label-text">Interest Rate (p.a.)</span>
+          <span class="label-val" id="lbl-rate">12.0%</span>
+        </div>
+        <input type="range" id="r-rate" min="1" max="30" step="0.1" value="12">
+        <div class="slider-minmax"><span>1%</span><span>30%</span></div>
+      </div>
+    </div>
+    <div class="calc-result">
+      <div class="emi-label">Monthly EMI</div>
+      <div class="emi-amount" id="res-emi">₹33,214</div>
+      <div class="emi-note">Approximate monthly payment</div>
+      <div class="donut-wrap">
+        <svg width="130" height="130" viewBox="0 0 130 130">
+          <circle cx="65" cy="65" r="48" fill="none" stroke="rgba(201,168,76,0.12)" stroke-width="14"/>
+          <circle id="donut-interest" cx="65" cy="65" r="48" fill="none" stroke="rgba(201,168,76,0.32)" stroke-width="14" stroke-dasharray="301.6" stroke-dashoffset="0" stroke-linecap="round"/>
+          <circle id="donut-principal" cx="65" cy="65" r="48" fill="none" stroke="#C9A84C" stroke-width="14" stroke-dasharray="301.6" stroke-dashoffset="120" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="donut-legend">
+        <span><span class="donut-dot" style="background:var(--gold)"></span>Principal</span>
+        <span><span class="donut-dot" style="background:rgba(201,168,76,.32)"></span>Interest</span>
+      </div>
+      <div class="calc-breakdown">
+        <div class="cb-row"><span class="cb-label">Principal Amount</span><span class="cb-val" id="res-principal">₹10,00,000</span></div>
+        <div class="cb-row"><span class="cb-label">Total Interest</span><span class="cb-val" id="res-interest">₹1,95,704</span></div>
+        <div class="cb-row total"><span class="cb-label">Total Payable</span><span class="cb-val" id="res-total">₹11,95,704</span></div>
+      </div>
+      <button class="btn-submit" onclick="openApplyModal()">Apply for This Loan →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STATS ═══════════ -->
+<section id="stats">
+  <div class="stats-strip">
+    <div class="stat-box"><div class="stat-num" id="s1">0</div><div class="stat-label">Total States</div></div>
+    <div class="stat-box"><div class="stat-num" id="s2">0</div><div class="stat-label">Lending Partners</div></div>
+    <div class="stat-box"><div class="stat-num" id="s3">0</div><div class="stat-label">Team Members</div></div>
+    <div class="stat-box"><div class="stat-num" id="s4">0</div><div class="stat-label">Years of Experience</div></div>
+  </div>
+</section>
+
+<!-- ═══════════ HOW IT WORKS ═══════════ -->
+<section id="process">
+  <span class="section-tag">How It Works</span>
+  <h2 class="section-title">Simple 4-Step <em>Loan Journey</em></h2>
+  <div class="divider"></div>
+  <div class="process-steps">
+    <div class="ps"><div class="ps-num">01</div><div class="ps-title">Apply Online</div><div class="ps-text">Fill in your basic details and choose your desired loan product in under 2 minutes.</div></div>
+    <div class="ps"><div class="ps-num">02</div><div class="ps-title">Upload Documents</div><div class="ps-text">Securely upload your KYC and income proof via our encrypted portal.</div></div>
+    <div class="ps"><div class="ps-num">03</div><div class="ps-title">Get Approved</div><div class="ps-text">Our platform matches your profile to the best lender for instant approval.</div></div>
+    <div class="ps"><div class="ps-num">04</div><div class="ps-title">Disbursement</div><div class="ps-text">Funds are credited directly to your bank account — often same business day.</div></div>
+  </div>
+</section>
+
+<!-- ═══════════ TESTIMONIALS ═══════════ -->
+<section id="testimonials">
+  <span class="section-tag">Client Stories</span>
+  <h2 class="section-title">What Our <em>Clients Are Saying</em></h2>
+  <div class="divider"></div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"I was impressed by the clarity and speed of service. Comparing offers from multiple lenders helped me find the best deal. Golden Rupee made home renovation financing easy and reliable."</p>
+      <div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Ramesh Iyer</div><div class="testi-role">Marketing Manager, Bengaluru</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Got my business loan sanctioned in 48 hours! The team was extremely professional and guided me through every step without any hassle. Highly recommend Golden Rupee Fintech."</p>
+      <div class="testi-author"><div class="testi-avatar">P</div><div><div class="testi-name">Priya Sharma</div><div class="testi-role">Business Owner, Mumbai</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"As a DSA partner I've been earning great commissions. The platform is transparent, payouts are always on time, and the support team is just a call away. Best decision I made."</p>
+      <div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Ajay Patel</div><div class="testi-role">DSA Partner, Ahmedabad</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PARTNERS ═══════════ -->
+<section id="partners">
+  <span class="section-tag">Our Network</span>
+  <h2 class="section-title" style="text-align:center;">Associate <em>Lending Partners</em></h2>
+  <div class="divider" style="margin:18px auto;"></div>
+  <div class="partner-logos">
+    <div class="plabel">HDFC Bank</div>
+    <div class="plabel">ICICI Bank</div>
+    <div class="plabel">State Bank of India</div>
+    <div class="plabel">Bajaj Finserv</div>
+    <div class="plabel">Axis Bank</div>
+    <div class="plabel">Kotak Mahindra</div>
+    <div class="plabel">Tata Capital</div>
+    <div class="plabel">Muthoot Finance</div>
+    <div class="plabel">LIC Housing Finance</div>
+    <div class="plabel">Manappuram Finance</div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="#home">
+        <div class="logo-icon">₹</div>
+        <div class="logo-text">Golden Rupee Fintech <span>Pvt Ltd</span></div>
+      </a>
+      <p>Providing quick and reliable financial solutions across India. Empowering millions to access credit with ease, transparency, and trust.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#Calculator">EMI Calculator</a></li>
+        <li><a href="#" onclick="openPartnerModal();return false;">Join as DSA Partner</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Loan Services</h4>
+      <ul>
+        <li><a href="#loans">Instant Loan</a></li>
+        <li><a href="#loans">Personal Loan</a></li>
+        <li><a href="#loans">Business Loan</a></li>
+        <li><a href="#loans">Credit Card</a></li>
+        <li><a href="#loans">Gold Loan</a></li>
+        <li><a href="#loans">Home Loan</a></li>
+        <li><a href="#loans">Education Loan</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="contact-info">
+        <div class="contact-item"><span class="ci">📧</span><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e78e898188a780888b8382899592978282c98e89">[email&#160;protected]</a></span></div>
+        <div class="contact-item"><span class="ci">📞</span><span>+91 98765 43210</span></div>
+        <div class="contact-item"><span class="ci">📍</span><span>Golden Rupee Fintech Pvt Ltd, India</span></div>
+        <div class="contact-item"><span class="ci">🕐</span><span>Mon–Sat: 10 AM – 7 PM<br>Sunday: Closed</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Golden Rupee Fintech Pvt Ltd. All rights reserved. &nbsp;|&nbsp;
+      <a href="#" onclick="openLegalModal('privacy');return false;" style="color:var(--gold);text-decoration:none;">Privacy Policy</a>
+      &nbsp;|&nbsp;
+      <a href="#" onclick="openLegalModal('terms');return false;" style="color:var(--gold);text-decoration:none;">Terms &amp; Conditions</a>
+    </p>
+    <div class="social-links">
+      <a class="social-link" href="#">f</a>
+      <a class="social-link" href="#">in</a>
+      <a class="social-link" href="#">tw</a>
+      <a class="social-link" href="#">yt</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Apply Button -->
+<button class="fab" onclick="openApplyModal()">Apply for Loan ₹</button>
+
+<!-- Toast -->
+<div id="gr-toast"></div>
+
+<!-- ═══════════ PRIVACY POLICY MODAL ═══════════ -->
+<div class="modal-overlay" id="privacyModal">
+  <div class="modal legal-modal">
+    <button class="modal-close" onclick="closeModal('privacyModal')">✕</button>
+    <div class="legal-header">
+      <div class="legal-icon">🔒</div>
+      <div>
+        <h3>Privacy Policy</h3>
+        <p class="legal-date">Effective Date: 1st January 2025 &nbsp;|&nbsp; Last Updated: 1st March 2025</p>
+      </div>
+    </div>
+    <div class="legal-body">
+      <p>This Privacy Policy describes how <strong>Golden Rupee Fintech Pvt Ltd</strong> collects, uses, stores, and discloses information about users who access our Platform. By using our Platform, you consent to the practices described in this Policy.</p>
+      <h4>1. Information We Collect</h4>
+      <ul>
+        <li><strong>Identity:</strong> Full name, date of birth, Aadhaar, PAN, Passport, Voter ID.</li>
+        <li><strong>Contact:</strong> Mobile number, email, residential and office address.</li>
+        <li><strong>Financial:</strong> Income, bank account, IFSC, credit score, loan history, GST number.</li>
+        <li><strong>Technical:</strong> IP address, browser, OS, device ID, cookies, usage logs.</li>
+        <li><strong>Communications:</strong> Call records, emails, and chat messages with us.</li>
+      </ul>
+      <h4>2. How We Use Your Information</h4>
+      <ul>
+        <li>Verify identity and assess loan eligibility.</li>
+        <li>Match and connect you with lending partners, banks, and NBFCs.</li>
+        <li>Process loan applications and facilitate disbursement.</li>
+        <li>Communicate application status, offers, and updates.</li>
+        <li>Comply with RBI guidelines and applicable laws.</li>
+        <li>Detect and prevent fraud, security breaches, or illegal activities.</li>
+        <li>Improve our Platform, services, and customer experience.</li>
+        <li>Send marketing communications (you may opt out at any time).</li>
+      </ul>
+      <h4>3. Sharing of Information</h4>
+      <ul>
+        <li><strong>Lending Partners:</strong> Banks, NBFCs, financial institutions.</li>
+        <li><strong>Credit Bureaus:</strong> CIBIL, Experian, Equifax, CRIF High Mark.</li>
+        <li><strong>KYC/AML Partners:</strong> KYC and anti-money laundering service providers.</li>
+        <li><strong>Technology Partners:</strong> Cloud, IT infrastructure, analytics under data processing agreements.</li>
+        <li><strong>Regulatory Authorities:</strong> RBI, SEBI, Income Tax, FIU-IND as required by law.</li>
+      </ul>
+      <p>We do <strong>not</strong> sell your personal data to third parties for independent marketing.</p>
+      <h4>4. Data Security</h4>
+      <p>We implement 256-bit SSL encryption, two-factor authentication, secure data centres, and regular security audits. No transmission method is 100% secure.</p>
+      <h4>5. Data Retention</h4>
+      <p>KYC and financial data is retained for a minimum of 7 years per RBI and PMLA guidelines.</p>
+      <h4>6. Your Rights</h4>
+      <ul>
+        <li>Access and review personal data we hold about you.</li>
+        <li>Request correction of inaccurate or incomplete information.</li>
+        <li>Withdraw consent for processing (subject to legal obligations).</li>
+        <li>Request deletion where no legal obligation requires retention.</li>
+        <li>Opt out of marketing communications at any time.</li>
+      </ul>
+      <p>To exercise these rights, contact: <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9dedeff4ebfcfee4ddfaf2f1f9f8f3efe8edf8f8b3f4f3">[email&#160;protected]</a></strong></p>
+      <h4>7. Grievance Officer</h4>
+      <div class="legal-contact-box">
+        <strong>Grievance Officer – Golden Rupee Fintech Pvt Ltd</strong><br/>
+        Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a8cfdac1cddec9c6cbcde8cfc7c4cccdc6daddd8cdcd86c1c6">[email&#160;protected]</a><br/>
+        Phone: +91 98765 43210<br/>
+        Response Time: Within 30 days of receipt of complaint
+      </div>
+    </div>
+    <button class="btn-submit" style="margin-top:24px;" onclick="closeModal('privacyModal')">I Understand</button>
+  </div>
+</div>
+
+<!-- ═══════════ TERMS & CONDITIONS MODAL ═══════════ -->
+<div class="modal-overlay" id="termsModal">
+  <div class="modal legal-modal">
+    <button class="modal-close" onclick="closeModal('termsModal')">✕</button>
+    <div class="legal-header">
+      <div class="legal-icon">📋</div>
+      <div>
+        <h3>Terms &amp; Conditions</h3>
+        <p class="legal-date">Effective Date: 1st January 2025 &nbsp;|&nbsp; Last Updated: 1st March 2025</p>
+      </div>
+    </div>
+    <div class="legal-body">
+      <p>These Terms govern your access to and use of the services provided by <strong>Golden Rupee Fintech Pvt Ltd</strong>, incorporated under the Companies Act, 2013. By using our Platform, you agree to be bound by these Terms.</p>
+      <h4>1. Eligibility</h4>
+      <ul>
+        <li>Indian citizen or resident aged 18 years or above.</li>
+        <li>Valid PAN card, Aadhaar card, and bank account.</li>
+        <li>Legal capacity to enter contracts under the Indian Contract Act, 1872.</li>
+        <li>Not declared insolvent or under any financial legal restriction.</li>
+      </ul>
+      <h4>2. Nature of Services</h4>
+      <p>Golden Rupee Fintech Pvt Ltd is a <strong>loan aggregation and DSA platform</strong>. We do not lend money directly. All approvals, rates, and disbursements are at the sole discretion of the respective lending institution. We make no guarantee of loan approval.</p>
+      <h4>3. DSA Partner Terms</h4>
+      <ul>
+        <li>Source only genuine and eligible loan applications from consenting customers.</li>
+        <li>Do not misrepresent loan terms, rates, or eligibility criteria.</li>
+        <li>Comply with all RBI guidelines applicable to Direct Selling Agents.</li>
+        <li>Do not collect any fees from loan applicants.</li>
+        <li>Commission payouts are subject to successful loan disbursement.</li>
+        <li>The Company reserves the right to terminate the DSA agreement for violations without notice.</li>
+      </ul>
+      <h4>4. Prohibited Activities</h4>
+      <ul>
+        <li>Providing false, misleading, or fraudulent information.</li>
+        <li>Using the Platform for unlawful purposes.</li>
+        <li>Attempting unauthorised access to any Platform systems.</li>
+        <li>Reverse engineering, uploading malware, or harassing users.</li>
+        <li>Using automated bots to scrape data.</li>
+      </ul>
+      <h4>5. Fees &amp; Charges</h4>
+      <p>Our Platform services are <strong>free of charge</strong> for loan applicants. All fees are levied directly by the lending institution and disclosed in your loan sanction letter.</p>
+      <h4>6. Limitation of Liability</h4>
+      <p>To the maximum extent permitted by law, Golden Rupee Fintech Pvt Ltd shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Platform.</p>
+      <h4>7. Governing Law &amp; Dispute Resolution</h4>
+      <p>These Terms are governed by the laws of India. Disputes shall be resolved through arbitration under the Arbitration and Conciliation Act, 1996. The seat of arbitration shall be India.</p>
+      <h4>8. Contact Us</h4>
+      <div class="legal-contact-box">
+        <strong>Golden Rupee Fintech Pvt Ltd</strong><br/>
+        Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="39555c5e5855795e56555d5c574b4c495c5c175057">[email&#160;protected]</a><br/>
+        Phone: +91 98765 43210<br/>
+        Business Hours: Monday to Saturday, 10:00 AM – 7:00 PM IST
+      </div>
+    </div>
+    <button class="btn-submit" style="margin-top:24px;" onclick="closeModal('termsModal')">I Agree</button>
+  </div>
+</div>
+
+<!-- ═══════════ PARTNER MODAL ═══════════ -->
+<div class="modal-overlay" id="partnerModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('partnerModal')">✕</button>
+    <h3>Become a DSA Partner</h3>
+    <p>Join India's fastest-growing fintech network. Zero investment, unlimited earning potential.</p>
+    <div class="form-row">
+      <div class="form-group"><label>Full Name *</label><input id="p-name" type="text" placeholder="Your name"/></div>
+      <div class="form-group"><label>Phone No. *</label><input id="p-phone" type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Email</label><input id="p-email" type="email" placeholder="your@email.com"/></div>
+      <div class="form-group"><label>Experience (years)</label><input id="p-exp" type="number" placeholder="0"/></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Aadhaar No.</label><input id="p-aadhaar" type="text" placeholder="XXXX XXXX XXXX"/></div>
+      <div class="form-group"><label>PAN No.</label><input id="p-pan" type="text" placeholder="ABCDE1234F"/></div>
+    </div>
+    <div class="form-group"><label>Preferred Loan Type</label>
+      <select id="p-loantype">
+        <option>Home Loan</option><option>Business Loan</option><option>Personal Loan</option>
+        <option>Auto Loan</option><option>Mortgage Loan</option><option>Education Loan</option><option>Gold Loan</option>
+      </select>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" id="pp1"/>
+      <label for="pp1">I accept the <a href="#" onclick="openLegalModal('privacy');return false;">Privacy Policy</a> and <a href="#" onclick="openLegalModal('terms');return false;">Terms &amp; Conditions</a></label>
+    </div>
+    <button id="partner-submit" class="btn-submit" onclick="submitPartnerForm()">Submit Application</button>
+  </div>
+</div>
+
+<!-- ═══════════ APPLY MODAL ═══════════ -->
+<div class="modal-overlay" id="applyModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('applyModal')">✕</button>
+    <h3>Apply for a Loan</h3>
+    <p>Fill in your details and our team will contact you with the best offers.</p>
+    <div class="form-group"><label>Full Name *</label><input id="apply-name" type="text" placeholder="Your full name"/></div>
+    <div class="form-group"><label>Phone Number *</label><input id="apply-phone" type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+    <div class="form-group"><label>PAN Number</label><input id="apply-pan" type="text" placeholder="ABCDE1234F"/></div>
+    <div class="form-group"><label>Loan Type</label>
+      <select id="apply-loantype">
+        <option>Instant Loan</option><option>Personal Loan</option><option>Business Loan</option>
+        <option>Home Loan</option><option>Gold Loan</option><option>Education Loan</option><option>Auto Loan</option>
+      </select>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" id="pp2"/>
+      <label for="pp2">I accept the <a href="#" onclick="openLegalModal('privacy');return false;">Privacy Policy</a> and <a href="#" onclick="openLegalModal('terms');return false;">Terms &amp; Conditions</a></label>
+    </div>
+    <button id="apply-submit" class="btn-submit" onclick="submitLoanForm()">Apply / Login →</button>
+  </div>
+</div>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- Your JS -->
+<script src="script.js"></script>
+</body>
+</html>
