@@ -3,11 +3,11 @@
    ============================================================ */
 
 /* ── CONFIGURATION – Replace with your real credentials ──── */
-const EMAILJS_SERVICE_ID       = 'YOUR_SERVICE_ID';      // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_LOAN    = 'YOUR_LOAN_TEMPLATE_ID'; // e.g. 'template_loan'
-const EMAILJS_TEMPLATE_PARTNER = 'YOUR_PARTNER_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY       = 'YOUR_PUBLIC_KEY';
-const GOOGLE_SHEET_URL         = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+const EMAILJS_SERVICE_ID       = 'service_dmtqbxo';      // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_LOAN    = 'template_5f61oei'; // e.g. 'template_loan'
+const EMAILJS_TEMPLATE_PARTNER = 'template_no6quza';
+const EMAILJS_PUBLIC_KEY       = 'd6nr5XVWzIxUPmJXU';
+const GOOGLE_SHEET_URL         = '1P6avLX-t7VBPn1ymShGPjuQDm0O5G8kLSmRkaocMbDDcuvRPig7jQgs5';
 /* ─────────────────────────────────────────────────────────── */
 
 
