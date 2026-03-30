@@ -408,7 +408,7 @@ async function submitPartnerForm() {
   const expEl     = document.getElementById('p-exp');
   const aadhaarEl = document.getElementById('p-aadhaar');
   const panEl     = document.getElementById('p-pan');
-  const loan      = document.getElementById('p-loantype').value;
+  // const loan      = document.getElementById('p-loantype').value;
   const agreed    = document.getElementById('pp1').checked;
 
   const name    = nameEl.value.trim();
@@ -452,12 +452,12 @@ async function submitPartnerForm() {
   btn.disabled = true;
 
   const ts   = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
-  const data = { type: 'DSA Partner', name, phone, email, experience: exp, aadhaar, pan, loanType: loan, timestamp: ts };
+  const data = { type: 'DSA Partner', name, phone, email, experience: exp, aadhaar, pan , timestamp: ts };
 
   await Promise.all([
     sendToSheet(data),
     sendEmail(EMAILJS_TEMPLATE_PARTNER, {
-      from_name: name, phone, email, experience: exp, pan, aadhaar, loan_type: loan, timestamp: ts, to_email: 'info@goldenrupee.in'
+      from_name: name, phone, email, experience: exp, pan, aadhaar , timestamp: ts, to_email: 'info@goldenrupee.in'
     })
   ]);
 
