@@ -4,8 +4,8 @@
 
 /* ── CONFIGURATION – Replace with your real credentials ──── */
 const EMAILJS_SERVICE_ID       = 'service_dmtqbxo';      // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_LOAN    = 'template_5f61oei'; // e.g. 'template_loan'
-const EMAILJS_TEMPLATE_PARTNER = 'template_no6quza';
+const EMAILJS_TEMPLATE_LOAN    = 'template_no6quza'; // e.g. 'template_loan'
+const EMAILJS_TEMPLATE_PARTNER = 'template_5f61oei';
 const EMAILJS_PUBLIC_KEY       = 'd6nr5XVWzIxUPmJXU';
 const GOOGLE_SHEET_URL         = 'https://script.google.com/macros/s/AKfycbx6UNHmrP1sHd58kUlMrRSKWekyQ0wARvkZ7Ge0oe3oTdDD7wBZXm5JAmSsMiEELLmTFA/exec';
 /* ─────────────────────────────────────────────────────────── */
